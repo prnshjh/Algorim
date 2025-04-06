@@ -12,7 +12,7 @@ export default function Index() {
       <div className="flex-1 flex flex-col justify-center items-center px-4 py-12">
         <div className="max-w-3xl w-full text-center">
           <BookOpen className="h-16 w-16 text-primary mx-auto mb-6" />
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">DSA Tracker</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4"> Algorim </h1>
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
             Track your progress, organize your practice, and master data structures and algorithms efficiently.
           </p>

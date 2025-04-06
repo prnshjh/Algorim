@@ -19,7 +19,7 @@ export function MainNav() {
         <div className="flex items-center gap-6">
           <Link to="/" className="flex items-center">
             <BookOpen className="h-7 w-7 mr-2 text-primary" />
-            <span className="font-bold text-lg">DSA Tracker</span>
+            <span className="font-bold text-lg"> Algorim </span>
           </Link>
           
           {isAuthenticated && (
