@@ -39,12 +39,12 @@ const Questions = () => {
             
             <div className="flex items-center gap-3">
               <ListFilter className="h-7 w-7 text-primary" />
-              <h1 className="text-3xl font-bold">Question List</h1>
+              <span className="text-3xl font-bold text-blue-500">{currentSheet.name}</span>
             </div>
             
             {currentSheet && (
               <div className="mt-2 text-muted-foreground">
-                <span className="font-medium text-foreground">{currentSheet.name}</span> - {currentSheet.description}
+                {currentSheet.description}
               </div>
             )}
           </div>
