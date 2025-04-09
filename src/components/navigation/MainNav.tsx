@@ -2,7 +2,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "@/context/AuthContext";
 import { Button } from "@/components/ui/button";
-import { BarChart3, BookOpen, LogOut, User, LayoutList } from "lucide-react";
+import { BarChart3, BookOpen, LogOut, User, LayoutList, Route, MessageCircleCode, Code } from "lucide-react";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
 
 
@@ -20,7 +20,7 @@ export function MainNav() {
       <div className="container mx-auto flex h-16 items-center justify-between">
         <div className="flex items-center gap-6">
           <Link to="/" className="flex items-center">
-            <BookOpen className="h-7 w-7 mr-2 text-primary" />
+            <Code className="h-7 w-7 mr-2 text-primary" />
             <span className="font-bold text-lg"> Algorim </span>
           </Link>
 
@@ -56,8 +56,17 @@ export function MainNav() {
                 className={`text-sm font-medium transition-colors hover:text-primary flex items-center gap-2 ${isActive("/dsa") ? "text-primary" : "text-foreground/70"
                   }`}
               >
-                <BookOpen className="h-4 w-4" />
+                <Route className="h-4 w-4" />
                 Roadmap
+              </Link>
+
+              <Link
+                to="/askai"
+                className={`text-sm font-medium transition-colors hover:text-primary flex items-center gap-2 ${isActive("/askai") ? "text-primary" : "text-foreground/70"
+                  }`}
+              >
+                <MessageCircleCode className="h-4 w-4" />
+                AskAI
               </Link>
 
 

@@ -24,7 +24,7 @@ const Questions = () => {
   
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      <MainNav />
+      <MainNav /> 
       <div className="container mx-auto py-8 px-4 animate-fadeIn">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
           <div>

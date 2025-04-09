@@ -15,6 +15,7 @@ import Sheets from "./pages/Sheets";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 import DisplaySVG from "./components/ui/DisplaySVG";
+import Chat from "./pages/Chat";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,7 @@ const App = () => (
                 <Route path="/sheets" element={<Sheets />} />
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/dsa" element={<DisplaySVG />} />
+                <Route path="/askai" element={<Chat />} />
                 <Route path="*" element={<NotFound />} />
               
               </Routes>
