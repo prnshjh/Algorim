@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import { MainNav } from "@/components/navigation/MainNav";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Code, LayoutList, BarChart3, UsersRound, Route, Bot } from "lucide-react";
+import { BookOpen, Code, LayoutList, BarChart3, ClipboardCheck, Route, Bot } from "lucide-react";
 
 export default function Index() {
   return (
@@ -68,15 +68,16 @@ export default function Index() {
                 </Button>
               </div>
             </Link>
-            <Link to="/" className="w-full">
+            <Link to="/interview" className="w-full">
               <div className="bg-card hover:bg-card/80 border rounded-lg p-6 text-center transition-all hover:shadow-md h-full flex flex-col">
-                <UsersRound className="h-10 w-10 mx-auto mb-4 text-primary" />
-                <h2 className="text-xl font-semibold mb-2">Collaborate</h2>
+                <ClipboardCheck className="h-10 w-10 mx-auto mb-4 text-primary" />
+                <h2 className="text-xl font-semibold mb-2">Mock Interview</h2>
                 <p className="text-muted-foreground mb-6 flex-grow">
-                  Join a community of learners and share your knowledge.
+                 Take mock interviews with AI and get instant feedback.
+       
                 </p>
                 <Button variant="outline" className="w-full">
-                  Join Now
+                  Start Now
                 </Button>
               </div>
             </Link>
