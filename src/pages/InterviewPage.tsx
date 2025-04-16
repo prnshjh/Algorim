@@ -31,14 +31,14 @@ export default function InterviewPage() {
 
   useEffect(() => {
     if (!interviewStarted || timer <= 0) return;
-  
+
     const interval = setInterval(() => {
       setTimer(timer - 1); // Directly calculate the new value
     }, 1000);
-  
+
     return () => clearInterval(interval);
   }, [interviewStarted, timer]);
-  
+
 
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60);
@@ -86,11 +86,35 @@ export default function InterviewPage() {
                   onChange={(e) => setTopic(e.target.value)}
                   className="w-full p-2 border rounded-md bg-background"
                 >
-                  {['Arrays', 'Trees', 'Graphs', 'Dynamic Programming, '].map((t) => (
-                    <option key={t} value={t}>
-                      {t}
-                    </option>
-                  ))}
+                  {[
+                    'Arrays',
+                    'Strings',
+                    'Linked Lists',
+                    'Stacks',
+                    'Queues',
+                    'Hashing',
+                    'Trees',
+                    'Binary Trees',
+                    'Binary Search Trees',
+                    'Heaps',
+                    'Tries',
+                    'Graphs',
+                    'Depth-First Search (DFS)',
+                    'Breadth-First Search (BFS)',
+                    'Topological Sorting',
+                    'Dynamic Programming',
+                    'Greedy Algorithms',
+                    'Divide and Conquer',
+                    'Backtracking',
+                    'Sliding Window',
+                    'Two Pointers',
+                    'Binary Search',
+                    'Bit Manipulation',
+                    'Recursion','Random'].map((t) => (
+                      <option key={t} value={t}>
+                        {t}
+                      </option>
+                    ))}
                 </select>
               </div>
 
