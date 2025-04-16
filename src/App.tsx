@@ -14,7 +14,7 @@ import Questions from "./pages/Questions";
 import Sheets from "./pages/Sheets";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
-import DisplaySVG from "./components/ui/DisplaySVG";
+import DisplayRoadmap from "./components/ui/DisplayRoadmap";
 import Chat from "./pages/Chat";
 import InterviewPage from "./pages/InterviewPage"; // NEW
 
@@ -37,7 +37,7 @@ const App = () => (
                   <Route path="/questions" element={<Questions />} />
                   <Route path="/sheets" element={<Sheets />} />
                   <Route path="/profile" element={<Profile />} />
-                  <Route path="/dsa" element={<DisplaySVG />} />
+                  <Route path="/dsa" element={<DisplayRoadmap />} />
                   <Route path="/askai" element={<Chat />} />
                   <Route path="/interview" element={<InterviewPage />} /> {/* NEW ROUTE */}
                   <Route path="*" element={<NotFound />} />
