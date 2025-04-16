@@ -86,7 +86,7 @@ export default function InterviewPage() {
                   onChange={(e) => setTopic(e.target.value)}
                   className="w-full p-2 border rounded-md bg-background"
                 >
-                  {['Arrays', 'Trees', 'Graphs', 'Dynamic Programming'].map((t) => (
+                  {['Arrays', 'Trees', 'Graphs', 'Dynamic Programming, '].map((t) => (
                     <option key={t} value={t}>
                       {t}
                     </option>
