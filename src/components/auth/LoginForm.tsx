@@ -39,7 +39,7 @@ export function LoginForm() {
       <CardHeader className="space-y-1">
         <CardTitle className="text-2xl font-bold text-center">Sign In</CardTitle>
         <CardDescription className="text-center">
-          Enter your credentials to access your account
+          Enter your credentials to access your account or try demo.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -49,7 +49,7 @@ export function LoginForm() {
             <Input
               id="email"
               type="email"
-              placeholder="name@example.com"
+              placeholder="demouser@gmail.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -68,6 +68,7 @@ export function LoginForm() {
               <Input
                 id="password"
                 type={showPassword ? "text" : "password"}
+                placeholder="12345678"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
