@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import { MainNav } from "@/components/navigation/MainNav";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Code, LayoutList, BarChart3, ClipboardCheck, Route, Bot } from "lucide-react";
+import { BookOpen, Code, LayoutList, BarChart3, ClipboardCheck, Route, Bot, GraduationCap } from "lucide-react";
 
 export default function Index() {
   return (
@@ -96,13 +96,13 @@ export default function Index() {
 
             <Link to="/video" className="w-full">
               <div className="bg-card hover:bg-card/80 border rounded-lg p-6 text-center transition-all hover:shadow-md h-full flex flex-col">
-                <Bot className="h-10 w-10 mx-auto mb-4 text-primary" />
+                <GraduationCap className="h-10 w-10 mx-auto mb-4 text-primary" />
                 <h2 className="text-xl font-semibold mb-2">Learn</h2>
                 <p className="text-muted-foreground mb-6 flex-grow">
                  Learn DSA through video lectures and tutorials.
                 </p>
                 <Button variant="outline" className="w-full">
-                  Ask Questions
+                  Watch Videos
                 </Button>
               </div>
             </Link>
