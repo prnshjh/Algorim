@@ -17,6 +17,7 @@ import NotFound from "./pages/NotFound";
 import DisplayRoadmap from "./components/ui/DisplayRoadmap";
 import Chat from "./pages/Chat";
 import InterviewPage from "./pages/InterviewPage";
+import CoursePage from "./pages/CoursePage";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +41,7 @@ const App = () => (
                   <Route path="/dsa" element={<DisplayRoadmap />} />
                   <Route path="/askai" element={<Chat />} />
                   <Route path="/interview" element={<InterviewPage />} />
+                  <Route path="/video" element={<CoursePage />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </TooltipProvider>

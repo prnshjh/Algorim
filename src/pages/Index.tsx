@@ -93,6 +93,19 @@ export default function Index() {
                 </Button>
               </div>
             </Link>
+
+            <Link to="/video" className="w-full">
+              <div className="bg-card hover:bg-card/80 border rounded-lg p-6 text-center transition-all hover:shadow-md h-full flex flex-col">
+                <Bot className="h-10 w-10 mx-auto mb-4 text-primary" />
+                <h2 className="text-xl font-semibold mb-2">Learn</h2>
+                <p className="text-muted-foreground mb-6 flex-grow">
+                 Learn DSA through video lectures and tutorials.
+                </p>
+                <Button variant="outline" className="w-full">
+                  Ask Questions
+                </Button>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
