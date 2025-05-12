@@ -50,7 +50,7 @@ const YouTubeGalleryPage: React.FC = () => {
   );
 
   return (
-    <div className="min-h-screen flex flex-col bg-background transition-colors duration-300">
+    <div className="min-h-screen bg-background">
       <MainNav />
       <div className="flex-1 flex flex-col items-center justify-center px-4 py-12 animate-fadeIn">
         <div className="max-w-4xl w-full">

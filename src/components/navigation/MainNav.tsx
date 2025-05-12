@@ -2,7 +2,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "@/context/AuthContext";
 import { Button } from "@/components/ui/button";
-import { BarChart3, BookOpen, LogOut, User, LayoutList, ClipboardCheck, MessageCircleCode, Code } from "lucide-react";
+import { BarChart3, BookOpen, LogOut, User, LayoutList, ClipboardCheck, MessageCircleCode, Code, Route, GraduationCap } from "lucide-react";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
 
 
@@ -71,6 +71,25 @@ export function MainNav() {
                 <MessageCircleCode className="h-4 w-4" />
                 AskAI
               </Link>
+
+              <Link
+                to="/video"
+                className={`text-sm font-medium transition-colors hover:text-primary flex items-center gap-2 ${isActive("/askai") ? "text-primary" : "text-foreground/70"
+                  }`}
+              >
+                <GraduationCap className="h-4 w-4" />
+                Courses
+              </Link>
+
+              <Link
+                to="/dsa"
+                className={`text-sm font-medium transition-colors hover:text-primary flex items-center gap-2 ${isActive("/askai") ? "text-primary" : "text-foreground/70"
+                  }`}
+              >
+                <Route className="h-4 w-4" />
+                Roadmap
+              </Link>
+
 
 
             </nav>

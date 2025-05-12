@@ -64,7 +64,7 @@ const DisplayRoadmap: React.FC = () => {
       <div className="p-6 md:p-10">
         
         <div className="relative max-w-5xl mx-auto">
-          {/* Timeline vertical line */}
+        
           <div className="absolute left-1/2 w-1 h-full bg-gradient-to-b from-blue-300 to-purple-500 dark:from-blue-900 dark:to-purple-900 transform -translate-x-1/2 rounded-full pointer-events-none" />
           <div className="space-y-14 relative z-10">
             {dsaRoadmap.map((section, index) => {
@@ -74,11 +74,10 @@ const DisplayRoadmap: React.FC = () => {
                   key={index}
                   className={`relative flex flex-col md:flex-row items-center w-full ${isEven ? "" : "md:flex-row-reverse"}`}
                 >
-                  {/* Timeline node */}
                   <div className="absolute left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-card border-4 border-primary shadow-lg flex items-center justify-center z-20">
                     <span className="font-bold text-primary text-lg">{index + 1}</span>
                   </div>
-                  {/* Card */}
+                  
                   <div className={`w-full md:w-1/2 p-4 ${isEven ? "md:pl-16 md:pr-8" : "md:pr-16 md:pl-8"}`}>
                     <div className="relative group">
                       <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-purple-400 rounded-2xl opacity-20 group-hover:opacity-40 transition-all duration-300 blur-sm pointer-events-none" />
@@ -117,7 +116,7 @@ const DisplayRoadmap: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  {/* Spacer for timeline on small screens */}
+                
                   <div className="hidden md:block w-1/2" />
                 </div>
               );
