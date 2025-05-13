@@ -96,7 +96,7 @@ const YouTubeGalleryPage: React.FC = () => {
                 className="mb-6"
                 onClick={() => setSelectedVideo(null)}
               >
-                ⬅ Back to Gallery
+                ⬅ Back
               </Button>
               <div className="w-full max-w-3xl aspect-video rounded-lg overflow-hidden shadow-lg bg-card border">
                 <ReactPlayer
