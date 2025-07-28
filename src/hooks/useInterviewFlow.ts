@@ -13,7 +13,7 @@ export const useInterviewFlow = () => {
       setIsLoading(true);
       setError('');
       
-      const model = genAI.getGenerativeModel({ model: 'gemini-1.5-pro' });
+      const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
       const prompt = `Generate a ${difficulty.toLowerCase()} difficulty coding interview question about ${topic}. 
         Return only the question text with no additional formatting or explanation.`;
 
